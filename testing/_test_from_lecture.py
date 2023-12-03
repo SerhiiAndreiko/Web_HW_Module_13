@@ -1,9 +1,6 @@
 import pytest
 
-# @app.on_event("startup")
-# async def startup():
-#     r = await redis.Redis(host=settings.redis_host, port=settings.redis_port, db=0)
-#     await FastAPILimiter.init(r)
+
 import requests
 from unittest.mock import Mock, patch
 
