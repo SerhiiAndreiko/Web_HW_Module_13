@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>GO IT, HOME WORK 11</title>
+  <link rel="icon" href="{{ url_for('static', path='/favicon.ico') }}">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Custom styles for this template -->
+  <link href="{{ url_for('static', path='/cover.css') }}" rel="stylesheet">
+</head>
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+<div class="cover-container-sd d-flex w-100 h-100 p-3 mx-auto flex-column" style="max-width: 72em;">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">GoIT WEB</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+        <a class="nav-link" target="_blank" href="https://github.com/SerhiiAndreiko/Web_HW_Module_11">Features</a>
+        <a class="nav-link" target="_blank" href="https://github.com/SerhiiAndreiko">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <h1>GO IT, HOME WORK 13-14</h1>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+      </div>
+      <div class="carousel-inner" style="padding: 50px;">
+        <div class="carousel-item active">
+          <h4>Мета цього домашнього завдання</h4>
+          <p class="lead">
+            У цьому домашньому завданні ми продовжуємо доопрацьовувати застосунок REST API із домашнього завдання 12 та 13.
+          </p>
+        </div>
+        <div class="carousel-item">
+          <h4>Загальні вимоги:</h4>
+          <p class="lead">
+            Завдання
+            1.Реалізуйте механізм верифікації електронної пошти зареєстрованого користувача;<br>
+            2.Обмежуйте кількість запитів до своїх маршрутів контактів. Обов’язково обмежте швидкість - створення
+            контактів для користувача;<br>
+            3.Увімкніть CORS для свого REST API;<br>
+            4.Реалізуйте можливість оновлення аватара користувача.<br>
+            5.Використовуйте сервіс Cloudinary;<br>
+            Загальні вимоги<br>
+            Усі змінні середовища повинні зберігатися у файлі .env. Всередині коду не повинно бути конфіденційних даних
+            у «чистому» вигляді;
+            Для запуску всіх сервісів і баз даних у застосунку використовується Docker Compose;</p>
+        </div>
+        <div class="carousel-item">
+          <h4>Домашнє завдання #14</h4>
+          <p class="lead">
+            У цьому домашньому завданні ми продовжуємо доопрацьовувати наш REST API застосунок із домашнього завдання 13.<br><br>
+            Завдання<br><br>
+            За допомогою Sphinx створіть документацію для вашого домашнього завдання. Для цього додайте в основних модулях до необхідних функцій і методів класів рядки docstrings.<br>
+            Покрийте модульними тестами модулі репозиторію домашнього завдання, використовуючи фреймворк Unittest. За основу візьміть приклад із конспекту для модуля tests/test_unit_repository_notes.py<br>
+            Покрийте функціональними тестами будь-який маршрут на вибір з вашого домашнього завдання, використовуючи фреймворк pytest.
+          </p>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+              data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <a href="docs/" class="btn btn-lg btn-secondary fw-bold border-white bg-white">API DOC</a>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p>
+      <img src="avatar.png" alt="Avatar" style="vertical-align: middle; width: 30px; height: 30px; border-radius: 50%; margin-right: 5px;"> <!-- Додайте шлях до вашого аватара -->
+      <a class="btn btn-sm btn-success bg-transparent border-0" href="https://github.com/SerhiiAndreiko" target="_blank">
+        Goit WEB 15. ©Serhii Andreiko
+      </a>
+    </p>
+  </footer>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+</html>
